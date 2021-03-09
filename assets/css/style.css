@@ -13,6 +13,14 @@ body {
   color: #444444;
 }
 
+.rotate10 {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
 a {
   text-decoration: none;
   color: #49b5e7;
@@ -595,7 +603,11 @@ section {
 .counts::before {
   content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+/*  background: rgba(255, 255, 255, 0.8);*/
+	  background: rgba(192,192,192,0.3);
+
+	
+	
   left: 0;
   right: 0;
   top: 0;
@@ -604,20 +616,21 @@ section {
 
 .counts .title {
   position: relative;
-  color: #0f394c;
+  color: #070707;
   margin-bottom: 40px;
 }
 
 .counts .title h3 {
   font-size: 36px;
   font-weight: 700;
+	
 }
 
 .counts .counters span {
   font-size: 44px;
   font-weight: 700;
   display: block;
-  color: #49b5e7;
+  color: #0F037E;
   font-family: "Dosis", sans-serif;
 }
 
@@ -625,7 +638,7 @@ section {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 15px;
-  color: #444444;
+	color: #0F037E;
 }
 
 @media (min-width: 1200px) {
@@ -656,7 +669,7 @@ section {
 
 .clients .client-logo img {
   height: 50%;
-  filter: grayscale(100%);
+/*  filter: grayscale(100%);*/
   transition: 0.3s;
 }
 
@@ -689,7 +702,7 @@ section {
 
 .services .icon {
   position: absolute;
-  left: -20px;
+  left: 1px;
   top: calc(50% - 30px);
 }
 
@@ -700,7 +713,7 @@ section {
 }
 
 .services .title {
-  margin-left: 40px;
+  margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -716,7 +729,7 @@ section {
 
 .services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 80px;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -1530,6 +1543,27 @@ section {
   font-size: 13px;
   color: #0f394c;
 }
+
+/*Whatsapp Floating Button */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 
 @media (max-width: 575px) {
   #footer .copyright, #footer .credits {
